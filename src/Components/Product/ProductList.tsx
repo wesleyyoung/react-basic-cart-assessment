@@ -42,7 +42,7 @@ export const ProductList: React.FC<{products: Product[]}> = ({products}) => {
                             <p>{product.description}</p>
                         </div>
                         <div className="price-div">
-                            <b>${product.price}</b>
+                            <b>${product.price.toFixed(2)}</b>
                         </div>
                         <div className="actions-div">
                             <Button color="blue">Add To Cart</Button>
