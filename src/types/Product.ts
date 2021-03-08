@@ -5,3 +5,7 @@ export interface Product {
     description: string
     price: number
 }
+
+export interface CartProduct extends Product {
+    quantity: number
+}

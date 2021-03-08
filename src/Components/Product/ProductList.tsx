@@ -28,7 +28,7 @@ const StyledProductListItem = styled.div`
         align-self: center;
     }
 `
-export const ProductList: React.FC<{products: Product[]}> = ({products}) => {
+export const ProductList: React.FC<{products: Product[], onAddToCart: (product: Product) => void}> = ({products, onAddToCart}) => {
     return (
         <div className="product-list">
             {products.map((product) => {
@@ -45,7 +45,7 @@ export const ProductList: React.FC<{products: Product[]}> = ({products}) => {
                             <b>${product.price}</b>
                         </div>
                         <div className="actions-div">
-                            <Button color="blue">Add To Cart</Button>
+                            <Button color="blue" onClick={() => onAddToCart(product) }>Add To Cart</Button>
                         </div>
                     </StyledProductListItem>
                 )
