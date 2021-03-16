@@ -1,7 +1,7 @@
 import React from "react";
-import {CartItem} from "../../types";
+import {CartItem} from "../../Types";
 import {Button, ButtonGroup, Grid, Header, Icon} from "semantic-ui-react";
-import {currencyFormat} from "../../utils";
+import {currencyFormat} from "../../Utils";
 import ButtonLink from "../Button/ButtonLink";
 
 export const CartListItem: React.FC<{ item: CartItem, addItem: (item: CartItem, qty?: number) => void, removeItem: (item: CartItem) => void }> =

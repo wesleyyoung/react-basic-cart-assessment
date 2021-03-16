@@ -1,8 +1,8 @@
 import React from "react"
 import {Button, ButtonGroup, Grid, Header, Icon, Label} from "semantic-ui-react"
 import styled from "styled-components"
-import {CartItem} from "../../types";
-import {currencyFormat} from "../../utils";
+import {CartItem} from "../../Types";
+import {currencyFormat} from "../../Utils";
 import ButtonLink from "../Button/ButtonLink";
 import {CartListItem} from "./CartListItem";
 

@@ -3,8 +3,8 @@ import {Grid, Header} from "semantic-ui-react"
 import {CartSidebar} from "../Components/Cart/CartSidebar"
 import {FixedMenuLayout} from "../Components/Layout/FixedMenuLayout"
 import {ProductList} from "../Components/Product/ProductList"
-import {demoProducts} from "../fixtures";
-import {useCartStore} from "../state";
+import {demoProducts} from "../Fixtures";
+import {useCartStore} from "../State";
 
 
 export const CartPage: React.FC = () => {

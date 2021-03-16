@@ -1,5 +1,5 @@
 import React from "react"
-import {CartItem, Product} from "../../types"
+import {CartItem, Product} from "../../Types"
 import styled from "styled-components"
 import {Button, Icon, Image} from "semantic-ui-react"
 
